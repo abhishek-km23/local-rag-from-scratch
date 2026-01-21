@@ -27,7 +27,6 @@ This project demonstrates how RAG actually works internally, without relying on 
 6. Inject context into LLM prompt
 7. Uses a local LLM (Ollama) to answer questions
 8. Generate grounded answer: Avoids hallucination by answering **only from context**
-7. 
 
 ---
 
@@ -38,37 +37,6 @@ This project demonstrates how RAG actually works internally, without relying on 
 - Sentence Transformers (embeddings)
 - Ollama (local LLM)
 - LangChain (minimal, explicit usage)
-
----
-
-# Local RAG from Scratch
-
-A fully local, production-style Retrieval-Augmented Generation (RAG) system built step by step using Python, FAISS, and Ollama.
-
-This project intentionally avoids unstable LangChain chains and instead implements retrieval and prompting explicitly for clarity, debuggability, and learning.
-
----
-
-## 🔍 What this project demonstrates
-
-- End-to-end RAG pipeline (PDF → embeddings → retrieval → answer)
-- Fully local LLM using Ollama (no cloud APIs)
-- FAISS vector search with persistent index
-- Hallucination-resistant answers ("I don't know" when context is missing)
-- Modular, production-style Python codebase
-- Real-world debugging decisions (chunking, `k` tuning, retriever APIs)
-
----
-
-## 🧠 Architecture Overview
-
-1. Load PDF documents
-2. Split text into chunks
-3. Generate embeddings
-4. Store vectors in FAISS
-5. Retrieve top-k relevant chunks
-6. Inject context into LLM prompt
-7. Generate grounded answer
 
 ---
 
