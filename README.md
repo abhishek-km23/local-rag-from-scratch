@@ -42,15 +42,16 @@ This project demonstrates how RAG actually works internally, without relying on 
 
 ## 📂 Project Structure
 
-├── main.py # Entry point (ask questions)
-├── rag_pipeline.py # Retrieval + prompting logic
-├── loaders.py # PDF loading
-├── chunking.py # Text splitting
-├── embeddings.py # Embeddings + FAISS
-├── llm.py # Ollama LLM wrapper
-├── requirements.txt
-├── data/ # PDFs (ignored in git)
-└── vector_index/ # FAISS index (ignored in git)
+    ├── main.py            # Entry point (ask questions)
+    ├── rag_pipeline.py    # Retrieval + prompting logic
+    ├── loaders.py         # PDF loading
+    ├── chunking.py        # Text splitting
+    ├── embeddings.py      # Embeddings + FAISS
+    ├── llm.py             # Ollama LLM wrapper
+    ├── requirements.txt
+    ├── data/              # PDFs (ignored in git)
+    └── vector_index/      # FAISS index (ignored in git)
+
 
 ---
 
