@@ -32,21 +32,8 @@ This project demonstrates how RAG actually works internally, without relying on 
 
 ## 🧠 RAG Architecture Flow
 
-```mermaid
-flowchart TD
-    A[PDF Document] --> B[PDF Loader]
-    B --> C[Text Chunking]
-    C --> D[Embeddings]
-    D --> E[FAISS Vector Store]
+![RAG Architecture](diagrams/rag_flowchart.png)
 
-    Q[User Question] --> QE[Question Embedding]
-    QE --> E
-
-    E --> R[Top-k Relevant Chunks]
-    R --> P[Prompt Construction]
-    P --> LLM[Ollama LLM]
-    LLM --> A1[Grounded Answer or I don't know]
-```
 --- 
 
 ## Tech Stack
