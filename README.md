@@ -41,7 +41,7 @@ This project demonstrates how RAG actually works internally, without relying on 
 ---
 
 ## 📂 Project Structure
-.
+
 ├── main.py # Entry point (ask questions)
 ├── rag_pipeline.py # Retrieval + prompting logic
 ├── loaders.py # PDF loading
@@ -51,6 +51,8 @@ This project demonstrates how RAG actually works internally, without relying on 
 ├── requirements.txt
 ├── data/ # PDFs (ignored in git)
 └── vector_index/ # FAISS index (ignored in git)
+
+---
 
 ## How to run
 
